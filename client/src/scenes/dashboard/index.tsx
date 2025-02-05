@@ -18,6 +18,7 @@ const gridtemplate = `
 
 const Dashboard = (props: Props) => {
   const { palette } = useTheme();
+
   return (
     <Box
       width="100%"
@@ -25,7 +26,7 @@ const Dashboard = (props: Props) => {
       display="grid"
       gap="1.5rem"
       sx={{
-        gridTemplateColumns: "repeat(3,minmax(370x,1fr))",
+        gridTemplateColumns: "repeat(3, minmax(370px, 1fr))",
         gridTemplateRows: "repeat(10,minmax(60px,1fr))",
         gridTemplateAreas: gridtemplate,
       }}
